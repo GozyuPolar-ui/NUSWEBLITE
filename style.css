@@ -1,0 +1,62 @@
+/* ==================== WARNA ==================== */
+/* Warna diambil dari logo sekolah: teal dan abu arang */
+:root {
+  --nush: #00A8A8;
+  --nush-gelap: #007F82;
+  --abu: #484848;
+}
+
+/* ==================== DASAR ==================== */
+html {
+  scroll-behavior: smooth;   /* klik menu = scroll halus */
+  scroll-padding-top: 70px;  /* judul section tidak tertutup navbar */
+}
+
+body {
+  color: var(--abu);
+}
+
+/* ==================== KELAS WARNA BUATAN SENDIRI ==================== */
+.text-nush {
+  color: var(--nush-gelap);
+}
+
+.btn-nush {
+  background-color: var(--nush);
+  border-color: var(--nush);
+  color: #fff;
+}
+
+.btn-nush:hover {
+  background-color: var(--nush-gelap);
+  border-color: var(--nush-gelap);
+  color: #fff;
+}
+
+/* ==================== HERO ==================== */
+/* Semua gambar carousel tingginya sama, dipotong rapi (tidak gepeng) */
+.carousel-item img {
+  height: 80vh;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+/* Ukuran judul menyesuaikan lebar layar */
+.carousel-caption h1,
+.carousel-caption h2 {
+  font-size: clamp(1.4rem, 4vw, 2.75rem);
+}
+
+/* ==================== GAMBAR ==================== */
+/* Foto profil dan galeri: lebar penuh, proporsi 4:3, dipotong rapi */
+.foto-4-3 {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* Gambar di card: proporsi seragam */
+.card-img-top {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
